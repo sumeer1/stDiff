@@ -21,8 +21,9 @@ stDiff is a python based deep learning model that is designed for spatial transc
 stDiff Workflow
 ----------------
 
+<img width="1230" alt="Screenshot 2024-03-12 at 5 09 31 PM" src="https://github.com/sumeer1/stDiff/assets/70262340/760c1514-f355-4230-a009-6574d02e78ed">
 
-[Fig1New.pdf](https://github.com/sumeer1/stDiff/files/14573898/Fig1New.pdf)
+
 
 
 
@@ -65,17 +66,16 @@ Real data: The pre-processed dorsolateral prefrontal cortex can be found in the 
 
 Usage
 ------
-There are two steps for the basic usage after activating the conda environment.
-*  Training the autoencoder with the given parameters to get the latent representation by running. 
+*  Training the stDiff with the given parameters to get the latent representation by running. 
 ```bash
-python interpolate_dlfpc.py --input_file <Specifies the domainA input file (cell by gene matrix in csv format)> \
+python interpolate_dlfpc.py --input_file <Specifies the input to the stDiff model in spot by gene format> \
              
-             --output_file1 <Specifies the low dimensional representation of the input1 from the autoencoder> \
+             --output_file1 <Specifies the interpolated layer/slice output from the stDiff > \
              
-             --batch_size <Specifies the batch size to train the autoencoder, default=16>  \
-             --epochs <Specifies  the number of epochs for which autoencoder is trained, default=200> \
+             --batch_size <Specifies the batch size to train stDiff, default=8>  \
+             --epochs <Specifies  the number of epochs for which autoencoder is trained, default=300> \
              
-             --learning_rate <Specifies the learning rate, default=0.0001>
+             --learning_rate <Specifies the learning rate, default=1e-3>
 ```
 
 
@@ -84,7 +84,7 @@ python interpolate_dlfpc.py --input_file <Specifies the domainA input file (cell
  Running Example
  ---------------
 *   In this tutorial we show how to run stDiff  on the DLPFC Data. We have 
-prepared the required input dataset which you can find in the Simulated_Data folder. 
+prepared the required input dataset which you can find in the Real_Data folder. 
 *   We created a command-line interface for scAEGAN that allows it to be run in a high-performance computing environment. Because stDiff is built with Pytorch, we recommend running it on GPUs to significantly reduce run-time. It has been tested on Linux and OS X platforms.
 *   The experiments were performed on a Linux server using an Intel Xeon CPU E5-2680 v4 @ 2.40GHz processor with 128 GB RAM and an NVIDIA Tesla V100 GPU.
  * For model training and evaluation, a [vignette](https://github.com/sumeer1/scAEGAN/blob/main/Example/scAEGAN_Analysis.ipynb) presents an example how to run the scAEGAN and carry out the benchmarking using the Evaluation folder scripts. 

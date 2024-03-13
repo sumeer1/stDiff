@@ -3,7 +3,7 @@
 
 SpatialDiffusion- Predicting Spatial Transcriptomics with Denoising Diffusion Probabilistic Models
 ---------------------------------------------------------------------------------------------------------
-This repository contains the  SpatialDiffusion code and online data for in silico generation and interpolation. It also contains the code to evaluate and visualize the  results. 
+This repository contains the  SpatialDiffusion code and online data for in silico generation and interpolation of spatail transcriptomics data. It also contains the code to evaluate and visualize the  results. 
 * [Summary](#Summary)
 * [Installation Requisites](#Installation-Requisites )
 * [Datasets](#Datasets)

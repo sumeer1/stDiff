@@ -19,9 +19,11 @@ This repository contains the  scAEGAN code and online data for the single-omics 
 stDiff is a python based deep learning model that is designed for spatial transcriptomic in silico generation and interpolation. stDiff performs this by learning via a forward noise process and neural network learning the reverse diffusion process.
 
 stDiff Workflow
+-----------------
 
 
-<img width="1230" alt="Screenshot 2024-03-12 at 5 09 31 PM" src="https://github.com/sumeer1/stDiff/assets/70262340/760c1514-f355-4230-a009-6574d02e78ed">
+<img width="1224" alt="Screenshot 2024-03-13 at 1 46 44 PM" src="https://github.com/sumeer1/stDiff/assets/70262340/c74278cb-bbbb-4061-ad95-8d64a001a08c">
+
 
 
 

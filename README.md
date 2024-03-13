@@ -63,8 +63,7 @@ cd stDiff/
 Datasets
 ---------
 
-
-Real data: The pre-processed starmap data can be found in the real data folder.
+The preprocessed datasets can be downloaded from [(stDiff-data)](https://drive.google.com/drive/folders/1gjwjor6MBrUm4yAiOcCUMkfXYZobojvN?usp=share_link).
 
 Usage
 ------

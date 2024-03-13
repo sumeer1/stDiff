@@ -86,7 +86,7 @@ python interpolate_starmap.py --data_file <Specifies the input to the stDiff mod
 *   In this tutorial we show how to run stDiff  on the DLPFC Data. We have 
 prepared the required input dataset which you can find in the Real_Data folder. 
 *   We created a command-line interface for scAEGAN that allows it to be run in a high-performance computing environment. Because stDiff is built with Pytorch, we recommend running it on GPUs to significantly reduce run-time. It has been tested on Linux and OS X platforms.
-*   The experiments were performed on a Linux server using an Intel Xeon CPU E5-2680 v4 @ 2.40GHz processor with 128 GB RAM and an NVIDIA Tesla V100 GPU.
+*   The experiments were performed on a Linux server using an Intel (R) Xeon (R) CPU Gold 6230R @ 2.10GHz processor with 256 GB RAM and an Quadro RTX 8000 GPU.
  * For model training and evaluation, a [vignette](https://github.com/sumeer1/scAEGAN/blob/main/Example/scAEGAN_Analysis.ipynb) presents an example how to run the scAEGAN and carry out the benchmarking using the Evaluation folder scripts. 
  
  

@@ -1,5 +1,4 @@
-# SpatialDiffusion
-This repository contains the SpatialDiffusion code and online data for spatial transcriptomics. It also contains the code to evaluate and visualize the results.
+
 
 
 SpatialDiffusion- Predicting Spatial Transcriptomics with Denoising Diffusion Probabilistic Models

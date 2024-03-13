@@ -1,11 +1,10 @@
 # SpatialDiffusion
-This repository contains the stDiff code and online data for spatial transcriptomics. It also contains the code to evaluate and visualize the integration results. Metrics are available for quantifying outputs quality.
+This repository contains the SpatialDiffusion code and online data for spatial transcriptomics. It also contains the code to evaluate and visualize the results.
 
 
 SpatialDiffusion- Predicting Spatial Transcriptomics with Denoising Diffusion Probabilistic Models
 ---------------------------------------------------------------------------------------------------------
-This repository contains the  scAEGAN code and online data for the single-omics and multi-omics integration. It also contains the code to evaluate and visualize the integration results. Metrics are available for quantifying outputs quality.
-
+This repository contains the  SpatialDiffusion code and online data for in silico generation and interpolation. It also contains the code to evaluate and visualize the  results. 
 * [Summary](#Summary)
 * [Installation Requisites](#Installation-Requisites )
 * [Datasets](#Datasets)

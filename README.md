@@ -69,8 +69,8 @@ Usage
 ------
 *  Training the stDiff with the given parameters to get the latent representation by running. 
 ```bash
-python interpolate_starmap.py --data_file <Specifies the input to the stDiff model in spot by gene format> \
-             
+python interpolate_starmap.py
+             --data_file <Specifies the input to the stDiff model in spot by gene format> \
              --epochs <Specifies  the number of epochs for which autoencoder is trained, default=300> \
               --batch_size <Specifies the batch size to train stDiff, default=16>  \
              --learning_rate <Specifies the learning rate, default = 1e-3> \

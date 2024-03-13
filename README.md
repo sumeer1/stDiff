@@ -36,9 +36,18 @@ Installation Requisites
 
 The required libraries are included in [environment file](https://github.com/sumeer1/scAEGAN/blob/main/environment.yml). In order to install these libraries, follow the following steps:
 
-* Creating the conda environment with the following command. This will create and install the libraries included in the environment.yml file for training the SpatialDiffusion.
+* Creating the conda environment with the following command. This will create and then install the libraries included in the environment.yml file for training the SpatialDiffusion.
 ```
-conda env create --prefix ./env --file environment.yml --force
+conda env create --prefix ./env
+
+dependencies:
+ - torch >=2.1.2
+ - python >= 3.11
+ - pandas >= 2.1.4
+ - matplotlib >= 3.8.2
+ - umap-learn >= 0.5.5
+ - scanpy >=1.9.6
+ - squidpy >=1.3.1
  ```
 
 * The second step is to activate the conda envirnoment. 

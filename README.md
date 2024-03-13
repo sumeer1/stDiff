@@ -64,20 +64,18 @@ Datasets
 ---------
 
 
-Real data: The pre-processed dorsolateral prefrontal cortex can be found in the real data folder.
+Real data: The pre-processed starmap data can be found in the real data folder.
 
 Usage
 ------
 *  Training the stDiff with the given parameters to get the latent representation by running. 
 ```bash
-python interpolate_dlfpc.py --input_file <Specifies the input to the stDiff model in spot by gene format> \
+python interpolate_starmap.py --data_file <Specifies the input to the stDiff model in spot by gene format> \
              
-             --output_file1 <Specifies the interpolated layer/slice output from the stDiff > \
-             
-             --batch_size <Specifies the batch size to train stDiff, default=8>  \
              --epochs <Specifies  the number of epochs for which autoencoder is trained, default=300> \
-             
-             --learning_rate <Specifies the learning rate, default=1e-3>
+              --batch_size <Specifies the batch size to train stDiff, default=16>  \
+             --learning_rate <Specifies the learning rate, default = 1e-3> \
+             --output_file <Specifies the interpolated layer/slice output from the stDiff > \
 ```
 
 

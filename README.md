@@ -38,11 +38,10 @@ The required libraries are included in [environment file](https://github.com/sum
 
 * Creating the conda environment with the following command. This will create and then install the libraries included in the environment.yml file for training the SpatialDiffusion.
 ```
-conda env create --prefix ./env
+conda create -n stDiff python=3.11.7
 
 dependencies:
  - torch >=2.1.2
- - python >= 3.11
  - pandas >= 2.1.4
  - matplotlib >= 3.8.2
  - umap-learn >= 0.5.5
@@ -52,7 +51,7 @@ dependencies:
 
 * The second step is to activate the conda envirnoment. 
 ```
-conda activate ./env      
+conda activate stDiff      
 ```
 
 

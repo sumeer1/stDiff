@@ -1,8 +1,8 @@
-# stDiff
+# SpatialDiffusion
 This repository contains the stDiff code and online data for spatial transcriptomics. It also contains the code to evaluate and visualize the integration results. Metrics are available for quantifying outputs quality.
 
 
-stDiff- Predicting Spatial Transcriptomics Slices with Denoising Diffusion Probabilistic Models 
+SpatialDiffusion- Predicting Spatial Transcriptomics with Denoising Diffusion Probabilistic Models
 ---------------------------------------------------------------------------------------------------------
 This repository contains the  scAEGAN code and online data for the single-omics and multi-omics integration. It also contains the code to evaluate and visualize the integration results. Metrics are available for quantifying outputs quality.
 
@@ -16,9 +16,9 @@ This repository contains the  scAEGAN code and online data for the single-omics 
 
  Summary
  -------
-stDiff is a python based deep learning model that is designed for spatial transcriptomic in silico generation and interpolation. stDiff performs this by learning via a forward noise process and neural network learning the reverse diffusion process.
+SpatialDiffusion is a python based deep learning model that is designed for spatial transcriptomic in silico generation and interpolation. SpatialDiffusion performs this by learning via a forward noise process and reverse diffusion process via a neural network.
 
-stDiff Workflow
+SpatialDiffusion Workflow
 -----------------
 
 
@@ -37,7 +37,7 @@ Installation Requisites
 
 The required libraries are included in [environment file](https://github.com/sumeer1/scAEGAN/blob/main/environment.yml). In order to install these libraries, follow the following steps:
 
-* Creating the conda environment with the following command. This will create and install the libraries included in the environment.yml file for training the scAEGAN.
+* Creating the conda environment with the following command. This will create and install the libraries included in the environment.yml file for training the SpatialDiffusion.
 ```
 conda env create --prefix ./env --file environment.yml --force
  ```
@@ -53,7 +53,7 @@ conda activate ./env
 
 
 
-* stDiff is simply installed by cloning the repository.
+* SpatialDiffusion is simply installed by cloning the repository.
 ```
 git clone https://github.com/sumeer1/stDiff.git
 
@@ -63,16 +63,16 @@ cd stDiff/
 Datasets
 ---------
 
-The preprocessed datasets can be downloaded from [(stDiff-data)](https://drive.google.com/drive/folders/1gjwjor6MBrUm4yAiOcCUMkfXYZobojvN?usp=share_link). The folder contains the output data for analysis as well.
+The preprocessed datasets can be downloaded from [(SpatialDiffusion-data)](https://drive.google.com/drive/folders/1gjwjor6MBrUm4yAiOcCUMkfXYZobojvN?usp=share_link). The folder contains the output data for analysis as well.
 
 Usage
 ------
-*  Training the stDiff with the given parameters to get the latent representation by running. 
+*  Training the SpatialDiffusion with the given parameters to get the latent representation by running. 
 ```bash
-python interpolate_starmap.py
+python train_interpolate_dlpfc.py
              --data_file <Specifies the input to the stDiff model in spot by gene format> \
              --epochs <Specifies  the number of epochs for which stDiff is trained, default=300> \
-              --batch_size <Specifies the batch size to train stDiff, default=16>  \
+              --batch_size <Specifies the batch size to train stDiff, default=4>  \
              --learning_rate <Specifies the learning rate, default = 1e-3> \
              --output_file <Specifies the interpolated layer/slice output from the stDiff > \
 ```
@@ -82,11 +82,11 @@ python interpolate_starmap.py
 
  Running Example
  ---------------
-*   In this tutorial we show how to run stDiff  on the DLPFC Data. We have 
-prepared the required input dataset which you can find in the Real_Data folder. 
-*   We created a command-line interface for stDiff that allows it to be run in a high-performance computing environment. Because stDiff is built with Pytorch, we recommend running it on GPUs to significantly reduce run-time. It has been tested on Linux and OS X platforms.
+*   In this tutorial we show how to run SpatialDiffusion  on the DLPFC Data. We have 
+prepared the required input dataset which you can find in the stData folder. 
+*   We created a command-line interface for SpatialDiffusion that allows it to be run in a high-performance computing environment. Because SpatialDiffusion is built with Pytorch, we recommend running it on GPUs to significantly reduce run-time. It has been tested on Linux and OS X platforms.
 *   The experiments were performed on a Linux server using an Intel (R) Xeon (R) CPU Gold 6230R @ 2.10GHz processor with 256 GB RAM and an Quadro RTX 8000 GPU.
- * For model training and evaluation, a [vignette](https://github.com/sumeer1/scAEGAN/blob/main/Example/scAEGAN_Analysis.ipynb) presents an example how to run the scAEGAN and carry out the benchmarking using the Evaluation folder scripts. 
+ * For model training and evaluation, a [vignette](https://github.com/sumeer1/stDiff/blob/main/notebooks/stDiff_dlpfc_analysis.ipynb) presents an example how to run the SpatialDiffusion and carry out the benchmarking.
  
  
 

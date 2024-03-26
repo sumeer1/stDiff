@@ -34,7 +34,7 @@ SpatialDiffusion Workflow
 Installation Requisites 
 -----------------------
 
-The required libraries are included in [environment file](https://github.com/sumeer1/scAEGAN/blob/main/environment.yml). In order to install these libraries, follow the following steps:
+The required libraries are included in [environment file](https://github.com/sumeer1/stDiff/blob/main/environment.yml). In order to install these libraries, follow the following steps:
 
 * Creating the conda environment with the following command. This will create and then install the libraries included in the environment.yml file for training the SpatialDiffusion.
 ```
@@ -93,7 +93,7 @@ python train_interpolate_dlpfc.py
 prepared the required input dataset which you can find in the stData folder. 
 *   We created a command-line interface for SpatialDiffusion that allows it to be run in a high-performance computing environment. Because SpatialDiffusion is built with Pytorch, we recommend running it on GPUs to significantly reduce run-time. It has been tested on Linux and OS X platforms.
 *   The experiments were performed on a Linux server using an Intel (R) Xeon (R) CPU Gold 6230R @ 2.10GHz processor with 256 GB RAM and an Quadro RTX 8000 GPU.
- * For model training and evaluation, a [vignette](https://github.com/sumeer1/stDiff/blob/main/notebooks/stDiff_dlpfc_analysis.ipynb) presents an example how to run the SpatialDiffusion and carry out the benchmarking.
+ * For model training and evaluation, a [vignette](https://github.com/sumeer1/stDiff/blob/main/notebook/stDiff_dlpfc_analysis.ipynb) presents an example how to run the SpatialDiffusion and carry out the benchmarking.
  
  
 

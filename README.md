@@ -21,7 +21,8 @@ SpatialDiffusion Workflow
 -----------------
 
 
-<img width="1224" alt="Screenshot 2024-03-13 at 1 46 44 PM" src="https://github.com/sumeer1/stDiff/assets/70262340/c74278cb-bbbb-4061-ad95-8d64a001a08c">
+
+<img width="1083" alt="Screenshot 2024-03-28 at 4 49 36 PM" src="https://github.com/sumeer1/stDiff/assets/70262340/6b3545a4-a340-4cc2-88b3-b3097800822d">
 
 
 

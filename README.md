@@ -14,7 +14,7 @@ This repository contains the  SpatialDiffusion code and online data for in silic
 
  Summary
  -------
-* SpatialDiffusion is a python based denoising diffusion probablistic model that is designed for in silico generation and interpolation of spatial transcriptomics data.
+* SpatialDiffusion is a denoising diffusion probablistic model that is designed for in silico generation and interpolation of spatial transcriptomics data.
 * SpatialDiffusion performs this by learning via a forward noise process and reverse diffusion process via a neural network.
 
 SpatialDiffusion Workflow
